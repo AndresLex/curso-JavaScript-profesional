@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Scope</title>
+  </head>
+
+  <body>
+    <a href="/ejercicios/">Go back</a>
+    <p><em>Abre la consola</em></p>
+    
+    <script>
+        //Scope Global
+        // var mensage = "Hola Platzi";
+
+        //Function Scope
+        function imprimeNumeros() {
+            for (var i = 0; i < 10; i++) {
+                // setTimeout(() => {
+                //     console.log(i);
+                // }, 1);
+                console.log(i);
+            }
+        }
+
+        imprimeNumeros();
+
+        function printNumbers() {
+            var i;
+            for (i = 0; i < 10; i++) {
+            function eventuallyPrintNumber(n) {
+                setTimeout(function() {
+                console.log(n);
+                }, 3000);
+            }
+
+            eventuallyPrintNumber(i);
+            }
+        }
+
+        // printNumbers();
+
+        function impimeNumTarde() {
+            setTimeout(() => {
+                for (var i = 0; i < 10; i++) {
+                    const numero = Math.floor(Math.random() * i);
+                    console.log(numero);
+                }
+            }, 1000);
+        }
+        impimeNumTarde();
+
+        // Block Scope
+        function printNumbers2() {
+            for (let i = 0; i < 10; i++) {
+                setTimeout(function() {
+                    console.log(i);
+                }, 100);
+            }
+        }
+
+        printNumbers2();
+
+        // Module Scope
+        
+    </script>
+    
+  </body>
+</html>
