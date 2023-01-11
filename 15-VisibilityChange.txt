@@ -1,0 +1,21 @@
+VisibilityChange
+
+El visibilityChange forma parte del API del DOM llamado Page Visibility y nos deja saber si el elemento es visible, pude ser usado para ejecutar una acción cuando cambiamos de pestaña. Así podemos ahorrar batería y mejorar la UX.
+
+Este ejemplo comienza a reproducir una pista de música cuando el documento se hace visible, y pausa la música cuando el documento ya no es visible.
+
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
+    backgroundMusic.play();
+  } else {
+    backgroundMusic.pause();
+  }
+});
+
+Casos de uso
+Consideremos algunos casos de uso para la API de Visibilidad de Página.
+
+> Un sitio tiene un carrusel de imágenes que no debería avanzar a la siguiente diapositiva a no ser que el usuario esté viendo la página.
+> Una aplicación que muestra un panel de información y no se quiere que se actualice la información del servidor cuando la página no está visible.
+> Una página quiere detectar cuando se está pre cargando para poder mantener un recuento preciso de las visitas de página.
+> Un sitio desea desactivar los sonidos cuando el dispositivo está en modo de espera (el usuario presiona el botón de encendido para apagar la pantalla).

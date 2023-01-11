@@ -1,0 +1,45 @@
+IntersectionObserver
+
+Sirve para observar elementos y si cruzan un umbral que nosotros definimos nos lo va a notificar para tomar acción.
+
+El umbral se define por el porcentaje que tiene intersección con el viewport, con la parte visible de nuestra página.
+
+Creando un intersection observer
+
+Crear el intersection observer llamando a su constructor y pasándole una función callback para que se ejecute cuando un nivel (threshold) sea cruzado en una u otra dirección:
+
+var options = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '0px',
+  threshold: 1.0
+}
+
+var observer = new IntersectionObserver(callback, options);
+
+Un threshold de 1.0 significa que cuando el 100% del elemento target está visible dentro del elemento especificado por la opción root, la función callback es invocada.
+
+
+
+Determinando un elemento para ser observado
+
+Una vez usted ha creado el observer, necesita darle un elemento target para observar:
+
+
+var target = document.querySelector('#listItem');
+observer.observe(target);
+
+Cuando el elemento target encuentra un threshold especificado por el IntersectionObserver, la función callback es invocada. La función callback recibe una lista de objetos IntersectionObserverEntry y el observer:
+
+var callback = function(entries, observer) { 
+  entries.forEach(entry => {
+    // Cada entry describe un cambio en la intersección para
+    // un elemento observado
+    //   entry.boundingClientRect
+    //   entry.intersectionRatio
+    //   entry.intersectionRect
+    //   entry.isIntersecting
+    //   entry.rootBounds
+    //   entry.target
+    //   entry.time
+  });
+};

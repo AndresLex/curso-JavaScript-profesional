@@ -40,10 +40,13 @@
         try {
           const response = await fetch(url, { signal: controller.signal });
           const blob = await response.blob();
+          console.log(blob);
           const imgUrl = URL.createObjectURL(blob);
+          console.log(imgUrl);
           img.src = imgUrl;
         } catch (error) {
           console.log(error.message);
+          alert(`Error: ${error.message}`)
         }
 
         stopLoading();
