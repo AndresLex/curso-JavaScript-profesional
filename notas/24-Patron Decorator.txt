@@ -1,0 +1,3 @@
+Patrón Decorator
+
+Añade nuevas responsabilidades a un objeto de forma dinámica permitiendo así extender su funcionalidad sin tener que usar subclases.
