@@ -1,0 +1,13 @@
+
+Tipos:
+
+boolean. Valor verdadero o falso.
+number. Números.
+string. Cadenas de texto.
+string[]. Arreglo del tipo cadena de texto.
+Array. Arreglo multi-tipo, acepta cadenas de texto o números.
+enum. Es un tipo especial llamado enumeración.
+any. Cualquier tipo.
+object. Del tipo objeto.
+
+https://www.typescriptlang.org/docs/handbook/basic-types.html

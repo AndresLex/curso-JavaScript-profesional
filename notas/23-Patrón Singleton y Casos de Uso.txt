@@ -1,0 +1,10 @@
+Patrón Singleton y Casos de Uso
+
+Es un patrón que te asegura que una clase solo tiene una instancia. Esta única instancia puede ser consumida por cualquier otro objeto.
+
+-UML (forma gráfica de representación de un sistema basado en Clases).
+-Que “método” es como se denomina a una función definida dentro de una clase.
+-El término estático (que significa que la propiedad o el método no pertenece a las instancias, si no a la clase y es único).
+-Qué implica la visibilidad (públicos o privados) de los elementos. Cuando algo es público puede ser accedido desde cualquier parte del programa, si es privado sólo la propia clase puede accederlo o usarlo.
+
+https://refactoring.guru/es/design-patterns/singleton/typescript/example

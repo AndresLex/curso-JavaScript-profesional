@@ -34,14 +34,14 @@ async function precache() {
     // el "/" es importante ya que las paginas se solicitan como / 
     // se retorna ya que es una promesa que espera waitUntil
     return cache.addAll([
-        '/',
-        '/index.html',
-        '/assets/index.js',
-        '/assets/MediaPlayer.js',
-        '/plugins/AutoPlay.js',
-        '/plugins/AutoPause.js',
-        '/assets/index.css',
-        '/assets/BigBuckBunny.mp4'
+        // '/',
+        // '/index.html',
+        // '/assets/index.js',
+        // '/assets/MediaPlayer.js',
+        // '/plugins/AutoPlay.js',
+        // '/plugins/AutoPause.js',
+        // '/assets/index.css',
+        // '/assets/BigBuckBunny.mp4'
     ]);
 }
 

@@ -1,0 +1,2 @@
+Funciones 
+En Typescript podemos ser explícitos con el tipo de los argumentos y el tipo de retorno de una función.

@@ -1,0 +1,3 @@
+Qué es un patrón de diseño
+
+Son soluciones generales ya probadas dentro de un contexto que las limita a problemas frecuentes que nos encontramos en el desarrollo de software.
